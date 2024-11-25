@@ -27,7 +27,7 @@ public class DaysOfMonths {
         } else if (month == 2) {
             return leapYear?29:28;
         }
-        return -1;
+        throw new IllegalArgumentException("Invalid month: " + month);
     }
 
     private static int getValidYear(Scanner sc){
